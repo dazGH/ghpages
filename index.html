@@ -7,10 +7,49 @@
         h1{
             color:aqua;
         }
+        main{
+            display: flex;
+            flex-flow: column wrap;
+        }
+        
+        .col{
+            
+            flex: 1 0 200px;
+            align-self: center;
+            background: pink;
+            border: 1px solid red;
+        }
+        
+        nav{
+            display: flex;
+            flex-flow: row-reverse;
+            justify-content: center;
+            background: yellow;
+            
+        }
+        
+        nav a{
+            flex: 1 0 150px;
+            border: 1px solid purple;
+            
+        }
     </style>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <p>How cool is this!</p>
+   <nav>
+       <a href="#">Title ABCD</a>
+       <a href="#" class="menu1">menu1</a>
+       <a href="#" class="menu2">menu2</a>
+       <a href="#" class="menu3">menu3</a>
+       <a href="#" class="menu4">menu4</a>
+       <a href="#" class="menu5">menu5</a>
+       
+   </nav>
+   <main>
+   <div class= "col"><h1>Hello World</h1></div>
+    
+    <div class="col"><p>How cool is this!</p></div>
+</main>
+
 </body>
 </html>
